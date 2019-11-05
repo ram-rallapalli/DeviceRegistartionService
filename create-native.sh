@@ -1,0 +1,1 @@
+aws lambda create-function --function-name my-native-function --zip-file fileb://target/function.zip --handler device-registry-function --runtime provided --role arn:aws:iam::272673835020:role/WildRydesLambda --environment Variables="{DISABLE_SIGNAL_HANDLERS=true}"
